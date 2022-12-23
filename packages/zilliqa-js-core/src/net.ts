@@ -157,7 +157,7 @@ export const performRPC = async <R, E, D extends any[], T = RPCResponse<R, E>>(
       cache: 'no-cache',
       mode: 'cors',
       redirect: 'follow',
-      referrer: 'no-referrer',
+      //referrer: 'no-referrer',
       body: JSON.stringify(request.payload),
       headers: {
         ...DEFAULT_HEADERS,
@@ -192,7 +192,7 @@ export const performBatchRPC = async <
       cache: 'no-cache',
       mode: 'cors',
       redirect: 'follow',
-      referrer: 'no-referrer',
+      //referrer: 'no-referrer',
       body: JSON.stringify(request.payload),
       headers: {
         ...DEFAULT_HEADERS,
